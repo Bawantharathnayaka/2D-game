@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-block sid="654493700491990">
+            <conditions>
+                <condition id="2" name="Key is down" sid="748035269714858" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="510983608284205" type="Sprite2">
+                    <param id="0" name="Animation">&quot;Run&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="342510912129664" type="Sprite2">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="164695911763227">
+            <conditions>
+                <condition id="2" name="Key is down" sid="222415322808698" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="611098576534602" type="Sprite2">
+                    <param id="0" name="Animation">&quot;Run&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="494818270582754" type="Sprite2">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="619010595118881">
+            <conditions>
+                <condition id="3" name="On key released" sid="306136765692391" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="2" name="Stop" sid="317486895136235" type="Sprite2" />
+            </actions>
+        </event-block>
+        <event-block sid="209972575254581">
+            <conditions>
+                <condition id="3" name="On key released" sid="487906066080121" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="2" name="Stop" sid="664345236156205" type="Sprite2" />
+            </actions>
+        </event-block>
+        <event-block sid="979935579060935">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="698521250472770" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="238314921775020" type="Sprite6" />
+            </actions>
+        </event-block>
+        <event-block sid="414069854191989">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="769701899471815" type="System" />
+            </conditions>
+            <actions>
+                <action id="-22" name="Set angle toward position" sid="667534520710109" type="gun">
+                    <param id="0" name="X">Mouse.X</param>
+                    <param id="1" name="Y">Mouse.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="883771702724661">
+            <conditions>
+                <condition id="0" name="On click" sid="861198773966885" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="867880000495742" type="gun">
+                    <param id="0" name="Object">Sprite6</param>
+                    <param id="1" name="Layer">&quot;bullet&quot;</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action behavior="Physics" id="5" name="Apply impulse at angle" sid="211059530206405" type="Sprite6">
+                    <param id="0" name="Impulse">distance(Self.X,Self.Y,Mouse.X,Mouse.Y) / 20</param>
+                    <param id="1" name="Angle">gun.Angle</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="351376317372562">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="936568499596661" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="876615004061504" type="ball2" />
+            </actions>
+        </event-block>
+        <event-block sid="385326840824778">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="571391537194934" type="Keyboard">
+                    <param id="0" name="Key">32</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>hqfwkdytiw4f</unique-id>
+    <saved-with-version>26200</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Sprite" sid="308848595644792">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="757157365479712" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground" sid="160328919773533">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="781901942287267">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="941948932209745">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Nirodha Senanayake\Desktop\New folder\ground.png" />
+        </object-type>
+        <object-type name="Sprite2" sid="811012964790018">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="424531470896452">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="816111520765698">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="660601654644397" speed="5">
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.504425" original-source="C:\Users\Nirodha Senanayake\Desktop\New folder\run1\1.png" />
+                </animation>
+                <animation framecount="6" loop="0" name="Run" pingpong="0" repeatcount="1" repeatto="0" sid="748170121437451" speed="5">
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.504425" original-source="C:\Users\Nirodha Senanayake\Desktop\New folder\run1\1.png">
+                        <collision-poly>
+                            <point x="0.341176" y="0.460177" />
+                            <point x="0.5" y="0.424779" />
+                            <point x="0.647058" y="0.420354" />
+                            <point x="0.811765" y="0.599558" />
+                            <point x="0.635294" y="0.982301" />
+                            <point x="0.358824" y="0.995575" />
+                            <point x="0.279412" y="0.829645" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.504425" original-source="C:\Users\Nirodha Senanayake\Desktop\New folder\run1\2.png">
+                        <collision-poly>
+                            <point x="0.352941" y="0.451328" />
+                            <point x="0.535294" y="0.40708" />
+                            <point x="0.658822" y="0.429204" />
+                            <point x="0.817646" y="0.526549" />
+                            <point x="0.717646" y="1" />
+                            <point x="0.3" y="1" />
+                            <point x="0.205882" y="0.827433" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.504425" original-source="C:\Users\Nirodha Senanayake\Desktop\New folder\run1\3.png">
+                        <collision-poly>
+                            <point x="0.376471" y="0.473451" />
+                            <point x="0.529411" y="0.404867" />
+                            <point x="0.658822" y="0.446903" />
+                            <point x="0.844117" y="0.612831" />
+                            <point x="0.629411" y="0.986726" />
+                            <point x="0.305882" y="0.982301" />
+                            <point x="0.270588" y="0.78761" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.504425" original-source="C:\Users\Nirodha Senanayake\Desktop\New folder\run1\4.png">
+                        <collision-poly>
+                            <point x="0.352941" y="0.464602" />
+                            <point x="0.52353" y="0.402655" />
+                            <point x="0.682352" y="0.424779" />
+                            <point x="0.764705" y="0.575222" />
+                            <point x="0.694117" y="0.699116" />
+                            <point x="0.641177" y="1" />
+                            <point x="0.382353" y="0.99115" />
+                            <point x="0.341176" y="0.809734" />
+                            <point x="0.335294" y="0.683628" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.504425" original-source="C:\Users\Nirodha Senanayake\Desktop\New folder\run1\5.png">
+                        <collision-poly>
+                            <point x="0.358824" y="0.446903" />
+                            <point x="0.517647" y="0.40708" />
+                            <point x="0.67647" y="0.429204" />
+                            <point x="0.717646" y="0.707964" />
+                            <point x="0.705882" y="0.99115" />
+                            <point x="0.317647" y="0.99115" />
+                            <point x="0.323529" y="0.738937" />
+                            <point x="0.323529" y="0.524336" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.504425" original-source="C:\Users\Nirodha Senanayake\Desktop\New folder\run1\6.png">
+                        <collision-poly>
+                            <point x="0.352941" y="0.486726" />
+                            <point x="0.432353" y="0.429204" />
+                            <point x="0.564706" y="0.420354" />
+                            <point x="0.694117" y="0.424779" />
+                            <point x="0.707352" y="0.487832" />
+                            <point x="0.732352" y="0.652654" />
+                            <point x="0.652941" y="0.995575" />
+                            <point x="0.341176" y="1" />
+                            <point x="0.258824" y="0.946902" />
+                            <point x="0.394118" y="0.838495" />
+                            <point x="0.335294" y="0.734512" />
+                            <point x="0.338235" y="0.659291" />
+                            <point x="0.395588" y="0.595132" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="7" loop="0" name="Back" pingpong="0" repeatcount="1" repeatto="0" sid="992440866067458" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.504425" original-source="C:\Users\Nirodha Senanayake\Desktop\New folder\run1\Back\1.png" />
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.504425" original-source="C:\Users\Nirodha Senanayake\Desktop\New folder\run1\Back\2.png" />
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.504425" original-source="C:\Users\Nirodha Senanayake\Desktop\New folder\run1\Back\3.png" />
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.504425" original-source="C:\Users\Nirodha Senanayake\Desktop\New folder\run1\Back\4.png" />
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.504425" original-source="C:\Users\Nirodha Senanayake\Desktop\New folder\run1\Back\5.png" />
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.504425" original-source="C:\Users\Nirodha Senanayake\Desktop\New folder\run1\Back\6.png" />
+                </animation>
+                <animation framecount="2" loop="0" name="Shoot" pingpong="0" repeatcount="1" repeatto="0" sid="858501659234987" speed="5">
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.504425" original-source="C:\Users\Nirodha Senanayake\Desktop\New folder\shooting\1.png">
+                        <collision-poly>
+                            <point x="0.258824" y="0.486726" />
+                            <point x="0.894118" y="0.513274" />
+                            <point x="1" y="1" />
+                            <point x="0.129412" y="0.982301" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.504425" original-source="C:\Users\Nirodha Senanayake\Desktop\New folder\shooting\2.png">
+                        <collision-poly>
+                            <point x="0.0941177" y="0.628319" />
+                            <point x="0.741176" y="0.39823" />
+                            <point x="0.941176" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="754597141063169">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="TiledBackground2" sid="127518284315815">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="973037954333433">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Nirodha Senanayake\Desktop\New folder\ground.png" />
+        </object-type>
+        <object-type name="Sprite3" sid="515748434852457">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="145863131789881">
+                    <behavior id="Pin" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="180510530563602">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="496454871787780" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.424" y="0.5" />
+                            <point x="0.482001" y="0.478" />
+                            <point x="0.482" y="0.522001" />
+                            <point x="0.448" y="0.528001" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="491661895176276">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="151440714365568">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="161117060016230" speed="5">
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.504425" original-source="C:\Users\Nirodha Senanayake\Desktop\New folder\shooting\bullet\1.png">
+                        <collision-poly>
+                            <point x="0.376471" y="0.283186" />
+                            <point x="0.494118" y="0.274336" />
+                            <point x="0.611765" y="0.292035" />
+                            <point x="0.811765" y="0.495575" />
+                            <point x="0.670588" y="0.752212" />
+                            <point x="0.494118" y="0.80531" />
+                            <point x="0.305882" y="0.769912" />
+                            <point x="0.152941" y="0.495575" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="images" sid="253785965940440">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="258265824876431">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="394008634185234" speed="5">
+                    <frame duration="1" hotspotX="0.502222" hotspotY="0.502222" original-source="C:\Users\Nirodha Senanayake\Desktop\New folder\Obsticles\images (2).png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="images2" sid="726993734118245">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="292681357116376">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="966127888235588" speed="5">
+                    <frame duration="1" hotspotX="0.502222" hotspotY="0.502222" original-source="C:\Users\Nirodha Senanayake\Desktop\New folder\Obsticles\images (2).png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="images3" sid="261713467390068">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="376498794048794">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="581813836747968" speed="5">
+                    <frame duration="1" hotspotX="0.502222" hotspotY="0.502222" original-source="C:\Users\Nirodha Senanayake\Desktop\New folder\Obsticles\images (2).png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="images4" sid="243185815937120">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="972492525213423" speed="5">
+                    <frame duration="1" hotspotX="0.502222" hotspotY="0.502222" original-source="C:\Users\Nirodha Senanayake\Desktop\New folder\Obsticles\images (2).png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="images5" sid="712085336401915">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="572651965817000" speed="5">
+                    <frame duration="1" hotspotX="0.502222" hotspotY="0.502222" original-source="C:\Users\Nirodha Senanayake\Desktop\New folder\Obsticles\images (2).png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="images6" sid="606904063467805">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="516775743115362" speed="5">
+                    <frame duration="1" hotspotX="0.502222" hotspotY="0.502222" original-source="C:\Users\Nirodha Senanayake\Desktop\New folder\Obsticles\images (2).png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="images7" sid="215432403911835">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="468435022776665" speed="5">
+                    <frame duration="1" hotspotX="0.502222" hotspotY="0.502222" original-source="C:\Users\Nirodha Senanayake\Desktop\New folder\Obsticles\images (2).png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="images8" sid="481607032520018">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="496100246184284" speed="5">
+                    <frame duration="1" hotspotX="0.502222" hotspotY="0.502222" original-source="C:\Users\Nirodha Senanayake\Desktop\New folder\Obsticles\images (2).png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="images9" sid="568443537117317">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="943335240255648" speed="5">
+                    <frame duration="1" hotspotX="0.502222" hotspotY="0.502222" original-source="C:\Users\Nirodha Senanayake\Desktop\New folder\Obsticles\images (2).png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="565324514513260">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="gun" sid="340483416935695">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="606083996839053" speed="5">
+                    <frame duration="1" hotspotX="0.332155" hotspotY="0.625442" original-source="C:\Users\Nirodha Senanayake\Desktop\New folder\Obsticles\gun.png">
+                        <image-point name="depploy" x="0.830389" y="0.45583" />
+                        <collision-poly>
+                            <point x="0.261484" y="0.261484" />
+                            <point x="0.498233" y="0.282686" />
+                            <point x="0.671378" y="0.328622" />
+                            <point x="0.915194" y="0.498233" />
+                            <point x="0.597173" y="0.597173" />
+                            <point x="0.498233" y="0.533569" />
+                            <point x="0.243816" y="0.756184" />
+                            <point x="0.0600707" y="0.498233" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ball" sid="794989178559894">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="450188878866024" speed="5">
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.504425" original-source="C:\Users\Nirodha Senanayake\Desktop\New folder\shooting\bullet\ball.png">
+                        <collision-poly>
+                            <point x="0.364706" y="0.274336" />
+                            <point x="0.635294" y="0.274336" />
+                            <point x="0.811765" y="0.495575" />
+                            <point x="0.694118" y="0.769912" />
+                            <point x="0.494118" y="0.80531" />
+                            <point x="0.294118" y="0.778761" />
+                            <point x="0.152941" y="0.495575" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ball2" sid="681267898403469">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="949501727227138" speed="5">
+                    <frame duration="1" hotspotX="0.505882" hotspotY="0.504425" original-source="C:\Users\Nirodha Senanayake\Desktop\New folder\shooting\bullet\ball.png">
+                        <collision-poly>
+                            <point x="0.364706" y="0.274336" />
+                            <point x="0.635294" y="0.274336" />
+                            <point x="0.811765" y="0.495575" />
+                            <point x="0.694118" y="0.769912" />
+                            <point x="0.494118" y="0.80531" />
+                            <point x="0.294118" y="0.778761" />
+                            <point x="0.152941" y="0.495575" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="2" />
+        <global-instance type="Mouse" uid="18" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
